@@ -6,3 +6,5 @@
    tasks :
    - name : create docker image
      command: kubectl apply -f dep.yml
+     args :
+      chdir : //opt//project1
