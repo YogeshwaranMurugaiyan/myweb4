@@ -1,0 +1,8 @@
+---
+ - hosts : kubectlhost
+#  become: true
+   user: root
+
+   tasks :
+   - name : create docker image
+     command: kubectl apply -f svc.yml
