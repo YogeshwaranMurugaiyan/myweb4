@@ -1,10 +1,10 @@
 ---
  - hosts : kubectlhost
 #  become: true
-   user: root
+   #user: root
 
    tasks :
    - name : create docker image
-     command: kubectl apply -f svc.yml
+     command: sudo kubectl apply -f svc.yml
      args :
       chdir : //opt//project1
