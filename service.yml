@@ -1,5 +1,5 @@
 ---
- - hosts : kubectlhost
+ - hosts : kubeSlave
 #  become: true
    #user: root
 
@@ -7,4 +7,4 @@
    - name : create docker image
      command: sudo kubectl apply -f svc.yml
      args :
-      chdir : //opt//project1
+      chdir : //opt//kubeProject
