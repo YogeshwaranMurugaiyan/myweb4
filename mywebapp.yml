@@ -4,7 +4,7 @@
    - name : create docker image
      command: sudo docker build -t mywebapp1:latest .
      args :
-      chdir : //opt//test
+      chdir : //opt//project
 
    - name: create tag to push image onto dockerhub
      command: sudo docker tag mywebapp1:latest yogiwaran/mywebapp1:latest
