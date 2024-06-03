@@ -1,8 +1,10 @@
 ---
- - hosts : kubectlhost
+ - hosts : kubeSlave
    # become: true
-   user: root
+   #user: root
 
    tasks :
    - name : create docker image
-     command: kubectl apply -f dep.yml
+     command: sudo kubectl apply -f dep.yml
+     args :
+      chdir : //opt//kubeProject
